@@ -34,7 +34,7 @@ jobs:
 
       - name: Push image
         run: |
-          GH_IMAGE_ID=docker.pkg.github.com/${{ github.repository }}/$IMAGE_NAME
+          GH_IMAGE_ID=ghcr.io/${{ github.repository }}/$IMAGE_NAME
           DH_IMAGE_ID=andreccosta/$IMAGE_NAME
 
           docker tag $IMAGE_NAME $GH_IMAGE_ID:latest
