@@ -10,6 +10,7 @@ env:
 
 jobs:
   push:
+    environment: production
     runs-on: ubuntu-latest
 
     steps:
